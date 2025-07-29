@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 const organizationName = "cyberandco";
-const projectName = "docs.copernik.dev.cyberandco.ovh";
+const projectName = "docs.copernik.io";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Documentation',
@@ -21,7 +21,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: `https://${organizationName}`,
+  url: `https://docs.copernik.dev.cyberandco.ovh`,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
