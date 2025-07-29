@@ -1,0 +1,194 @@
+/* Features Section */
+.features {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  width: 100%;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.featureSvg {
+  height: 120px;
+  width: 120px;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+/* Beta Signup Section */
+.betaSignup {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.betaCard {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.betaTitle {
+  color: #1e293b;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.betaDescription {
+  color: #64748b;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.betaForm {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.emailInput {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.emailInput:focus {
+  border-color: #3b82f6;
+}
+
+.betaButton {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.betaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.launchDate {
+  color: #64748b;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Why Copernik Section */
+.whySection {
+  padding: 5rem 0;
+  background: #ffffff;
+}
+
+.whySubtitle {
+  font-size: 1.2rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.problemCard {
+  background: #fef2f2;
+  border-left: 4px solid #ef4444;
+  padding: 2rem;
+  border-radius: 12px;
+  height: 100%;
+}
+
+.problemCard h3 {
+  color: #dc2626;
+  margin-bottom: 1rem;
+}
+
+.problemCard ul {
+  color: #7f1d1d;
+  list-style: none;
+  padding: 0;
+}
+
+.problemCard li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.problemCard li:before {
+  content: "✗";
+  position: absolute;
+  left: 0;
+  color: #ef4444;
+  font-weight: bold;
+}
+
+.solutionCard {
+  background: #f0fdf4;
+  border-left: 4px solid #22c55e;
+  padding: 2rem;
+  border-radius: 12px;
+  height: 100%;
+}
+
+.solutionCard h3 {
+  color: #16a34a;
+  margin-bottom: 1rem;
+}
+
+.solutionCard ul {
+  color: #14532d;
+  list-style: none;
+  padding: 0;
+}
+
+.solutionCard li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.solutionCard li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #22c55e;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .betaForm {
+    flex-direction: column;
+  }
+  
+  .betaTitle {
+    font-size: 2rem;
+  }
+  
+  .ctaTitle {
+    font-size: 2rem;
+  }
+  
+  .statNumber {
+    font-size: 2.5rem;
+  }
+  
+  .featureSvg {
+    height: 100px;
+    width: 100px;
+  }
+}
