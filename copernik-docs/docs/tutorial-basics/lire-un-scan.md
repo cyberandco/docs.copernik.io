@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Lire un scan
 
-Une fois que vos scans sont terminés, vous pouvez les consulter dans votre [Tableau de bord Copernik](https://copernik.io/app/scans/result). Chaque scan fournit une vue d'ensemble des vulnérabilités détectées.
+Une fois que vos scans sont terminés, vous pouvez les consulter dans votre [Tableau de bord Copernik](https://beta.copernik.io/app/scans/result). Chaque scan fournit une vue d'ensemble des vulnérabilités détectées.
 
 ![Résultats des scans](/img/copernik-scans-list.png)
 

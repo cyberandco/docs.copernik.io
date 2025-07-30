@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Premiers scans
 
-Une fois votre organisation créée et votre premier domaine ajouté, les premiers scans de sécurité se lanceront automatiquement. Vous pouvez suivre l'avancement de ces scans dans votre [Tableau de bord Copernik](https://copernik.io/app).
+Une fois votre organisation créée et votre premier domaine ajouté, les premiers scans de sécurité se lanceront automatiquement. Vous pouvez suivre l'avancement de ces scans dans votre [Tableau de bord Copernik](https://beta.copernik.io/app).
 
 ![Tableau de bord Copernik](/img/copernik-first-scans.png)
 

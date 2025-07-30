@@ -11,8 +11,8 @@ const organizationName = "cyberandco";
 const projectName = "docs.copernik.io";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Documentation',
-  tagline: 'Comprendre pour mieux se protéger',
+  title: 'Copernik Documentation',
+  tagline: '🛡️ Comprendre pour mieux se protéger - La cybersécurité accessible à tous',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -54,21 +54,6 @@ const config = {
           editUrl:
             `https://github.com/${organizationName}/${projectName}/tree/main/`,
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: 
-          `https://github.com/${organizationName}/${projectName}/tree/main/`,
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -82,17 +67,30 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Copernik - Documentation',
+        title: 'Copernik',
         logo: {
           alt: 'Logo Copernik',
           src: 'img/logo_mini.png',
+          style: {
+            borderRadius: '8px',
+          },
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Démarrage rapide',
+            label: '📚 Guide utilisateur',
+          },
+          {
+            href: 'https://copernik.io',
+            label: '🌐 Copernik',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/cyberandco/docs.copernik.io',
+            label: '⭐ GitHub',
+            position: 'right',
           },
         ],
       },
@@ -100,45 +98,66 @@ const config = {
         style: 'light',
         links: [
           {
-            title: 'Documentation',
+            title: '📖 Documentation',
             items: [
               {
-                label: 'Démarrer avec Copernik',
+                label: '🚀 Démarrer avec Copernik',
                 to: '/docs/intro',
               },
               {
-                label: 'Guide utilisateur',
+                label: '📋 Guide utilisateur',
                 to: '/docs/tutorial-basics/premiers-scans',
               },
-            ],
-          },
-          {
-            title: 'Ressources',
-            items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'Tutoriels',
-                to: '/docs/tutorial-basics/choisir-un-plan',
+                label: '🎯 Types de scans',
+                to: '/docs/tutorial-basics/type-de-scans',
               },
             ],
           },
           {
-            title: 'Contact & Support',
+            title: '🔗 Ressources',
             items: [
               {
-                label: 'Email',
-                href: 'mailto:contact@copernik.fr',
+                label: '🌐 Copernik.io',
+                href: 'https://copernik.io',
               },
               {
-                label: 'LinkedIn',
-                href: 'https://www.linkedin.com/company/copernik',
+                label: '🛡️ Centre de sécurité',
+                href: 'https://beta.copernik.io/security',
+              },
+            ],
+          },
+          {
+            title: '🤝 Communauté',
+            items: [
+              {
+                label: '📧 Support',
+                href: 'mailto:contact@copernik.io',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/cyberandco/copernik-docs',
+                label: '💼 LinkedIn',
+                href: 'https://www.linkedin.com/company/copernik-io/',
+              },
+              {
+                label: '💬 Discord',
+                href: 'https://discord.gg/PvtfRpVB',
+              },
+            ],
+          },
+          {
+            title: '⚡ Outils',
+            items: [
+              {
+                label: '🔍 Scanner de domaine',
+                href: 'https://beta.copernik.io/app/domains/',
+              },
+              {
+                label: '📊 Dashboard',
+                href: 'https://beta.copernik.io/app/app',
+              },
+              {
+                label: '🚨 Alertes',
+                href: 'https://beta.copernik.io/app/alerts',
               },
             ],
           },
@@ -146,18 +165,24 @@ const config = {
         logo: {
           alt: 'Copernik Logo',
           src: 'img/logo_mini.png',
-          href: 'https://copernik.fr',
+          href: 'https://copernik.io',
           width: 48,
           height: 48,
         },
         copyright: `
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
-            <div style="display: flex; align-items: center; gap: 12px; text-align: center;">
-              <div style="font-size: 14px; color: #64748b; font-weight: 600;">
-                La cybersécurité accessible à tous
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; padding: 20px 0;">
+            <div style="display: flex; align-items: center; gap: 16px; text-align: center;">
+              <div style="font-size: 16px; color: #1e293b; font-weight: 700; background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                🛡️ La cybersécurité accessible à tous
               </div>
             </div>
-            <div style="color: #94a3b8; font-size: 12px;">
+            <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap; justify-content: center;">
+              <span style="color: #64748b; font-size: 14px; font-weight: 500;">🔒 Sécurisé</span>
+              <span style="color: #64748b; font-size: 14px; font-weight: 500;">⚡ Rapide</span>
+              <span style="color: #64748b; font-size: 14px; font-weight: 500;">🎯 Précis</span>
+              <span style="color: #64748b; font-size: 14px; font-weight: 500;">📱 Accessible</span>
+            </div>
+            <div style="color: #94a3b8; font-size: 12px; text-align: center;">
               © ${new Date().getFullYear()} Copernik - Tous droits réservés
             </div>
           </div>

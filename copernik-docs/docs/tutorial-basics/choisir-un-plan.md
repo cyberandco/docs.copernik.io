@@ -6,7 +6,7 @@ sidebar_position: 3
 
 Nous proposons plusieurs plans pour répondre aux besoins de votre organisation. Vous pouvez choisir le plan qui vous convient le mieux lors de la création de votre organisation ou à tout moment dans les paramètres de votre compte.
 
-Vous pouvez consulter les détails de chaque plan sur notre [page de tarification](https://copernik.io/tarifs).
+Vous pouvez consulter les détails de chaque plan sur notre [page de tarification](https://beta.copernik.io/tarifs).
 
 Vous pouvez tester gratuitement notre premier plan pendant 1 mois. Cela vous permet de découvrir les fonctionnalités de base de Copernik et de voir si notre solution répond à vos besoins.
 

@@ -16,4 +16,4 @@ Nous vous recommandons vivement de lire **[notre page de glossaire](https://test
 
 Assurez-vous d’avoir un compte utilisateur et **n’oubliez pas de vérifier votre boîte de réception** pour confirmer votre compte, c’est obligatoire ! 😊
 
-Vous pourrez ensuite accéder à votre [Tableau de bord Copernik](https://copernik.io/app).
+Vous pourrez ensuite accéder à votre [Tableau de bord Copernik](https://beta.copernik.io/app).
