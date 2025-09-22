@@ -135,5 +135,5 @@ Notre scan utilise [Nuclei](https://nuclei.projectdiscovery.io/), un scanner de 
 ---
 
 :::danger[Vulnérabilités critiques]
-Les vulnérabilités critiques doivent être traitées immédiatement. Contactez votre équipe sécurité et consultez nos [guides de remediation](../guides/remediation) pour des instructions détaillées.
+Les vulnérabilités critiques doivent être traitées immédiatement. Contactez votre équipe sécurité pour des instructions détaillées.
 :::
