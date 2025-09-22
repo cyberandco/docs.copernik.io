@@ -96,6 +96,7 @@
 .navbar__brand img {
   transition: all 0.5s ease !important;
   animation: spin 8s linear infinite;
+  box-shadow: none !important;
 }
 
 /* Masquer le bouton de changement de thème */
@@ -315,5 +316,51 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+}
+
+/* Image styling improvements - exclude navbar and footer logos */
+img:not(.navbar__brand img):not(.footer__logo img) {
+  border-radius: 12px !important;
+  max-width: 100% !important;
+  height: auto !important;
+  image-rendering: -webkit-optimize-contrast !important;
+  image-rendering: crisp-edges !important;
+}
+
+/* Specific styling for documentation images (screenshots) */
+.markdown img,
+article img {
+  border: 1px solid rgba(226, 232, 240, 0.6) !important;
+  border-radius: 16px !important;
+  margin: 1.5rem 0 !important;
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Prevent pixelation for large images */
+.markdown img[src*="copernik-"],
+article img[src*="copernik-"] {
+  max-width: 800px !important;
+  width: auto !important;
+  height: auto !important;
+  image-rendering: -webkit-optimize-contrast !important;
+  image-rendering: smooth !important;
+}
+
+/* Special handling for very wide images */
+.markdown img[src*="copernik-scan-summary"],
+.markdown img[src*="copernik-scans-list"],
+article img[src*="copernik-scan-summary"],
+article img[src*="copernik-scans-list"] {
+  max-width: 900px !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Logo images should maintain their style */
+.navbar__brand img,
+.footer__logo img {
+  border-radius: 12px !important;
 }
 
