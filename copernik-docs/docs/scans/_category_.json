@@ -1,0 +1,8 @@
+{
+  "label": "Nos Scans",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Découvrez les différents types de scans de sécurité proposés par Copernik pour analyser et protéger vos services web."
+  }
+}

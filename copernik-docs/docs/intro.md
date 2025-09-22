@@ -2,18 +2,28 @@
 sidebar_position: 1
 ---
 
-# Bienvenue chez Copernik 🚀
+# Bienvenue dans l'écosystème Copernik 🚀
 
-Copernik est une plateforme dédiée à la gestion des données de cybersécurité, conçue pour aider les entreprises à mieux comprendre et gérer leurs risques. Que vous soyez un professionnel de la cybersécurité ou un utilisateur souhaitant améliorer la sécurité de votre organisation, cette documentation est faite pour vous.
+**Copernik** transforme la cybersécurité en la rendant simple, automatique et accessible. Notre plateforme surveille en continu vos services web et détecte les vulnérabilités avant qu'elles ne deviennent critiques.
 
-Découvrons ensemble comment bien débuter avec Copernik.
+Cette documentation vous guidera pas à pas pour tirer le maximum de notre plateforme, que vous soyez débutant ou expert en sécurité.
 
-## Avant de commencer
+## Pour commencer
 
-:::warning[Prérequis]
-Nous vous recommandons vivement de lire **[notre page de glossaire](https://test.fr)** afin de vous familiariser avec les termes et concepts clés utilisés dans cette documentation. Cela vous aidera à mieux comprendre les fonctionnalités et les processus décrits.
+:::tip[Premières étapes]
+1. **Créez votre compte** sur [Copernik](https://beta.copernik.io/app)
+2. **Confirmez votre email** (vérifiez vos spams si nécessaire)
+3. **Ajoutez votre premier service web** en quelques clics
+4. **Lancez vos premiers scans** et découvrez les résultats
 :::
 
-Assurez-vous d’avoir un compte utilisateur et **n’oubliez pas de vérifier votre boîte de réception** pour confirmer votre compte, c’est obligatoire ! 😊
+### Que faire ensuite ?
 
-Vous pourrez ensuite accéder à votre [Tableau de bord Copernik](https://beta.copernik.io/app).
+- 🎯 **[Créer votre organisation](./tutorial-basics/creer-un-organisation.md)** - Configurez votre espace de travail
+- 🌍 **[Ajouter vos services web](./tutorial-basics/ajouter-un-domaine.md)** - Importez les services web à surveiller
+- 🚀 **[Lancer vos premiers scans](./tutorial-basics/premiers-scans.md)** - Découvrez nos 6 types d'analyses
+- 📈 **[Comprendre les résultats](./tutorial-basics/lire-un-scan.md)** - Interprétez vos rapports de sécurité
+
+:::info[Support et aide]
+Une question ? Notre équipe est là pour vous aider ! Consultez cette documentation ou contactez-nous directement via la plateforme.
+:::

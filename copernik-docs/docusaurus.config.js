@@ -21,7 +21,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: `https://docs.copernik.dev.cyberandco.ovh`,
+  url: `https://docs.copernik.io`,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -96,94 +96,74 @@ const config = {
       },
       footer: {
         style: 'light',
-        links: [
-          {
-            title: '📖 Documentation',
-            items: [
-              {
-                label: '🚀 Démarrer avec Copernik',
-                to: '/docs/intro',
-              },
-              {
-                label: '📋 Guide utilisateur',
-                to: '/docs/tutorial-basics/premiers-scans',
-              },
-              {
-                label: '🎯 Types de scans',
-                to: '/docs/tutorial-basics/type-de-scans',
-              },
-            ],
-          },
-          {
-            title: '🔗 Ressources',
-            items: [
-              {
-                label: '🌐 Copernik.io',
-                href: 'https://copernik.io',
-              },
-              {
-                label: '🛡️ Centre de sécurité',
-                href: 'https://beta.copernik.io/security',
-              },
-            ],
-          },
-          {
-            title: '🤝 Communauté',
-            items: [
-              {
-                label: '📧 Support',
-                href: 'mailto:contact@copernik.io',
-              },
-              {
-                label: '💼 LinkedIn',
-                href: 'https://www.linkedin.com/company/copernik-io/',
-              },
-              {
-                label: '💬 Discord',
-                href: 'https://discord.gg/PvtfRpVB',
-              },
-            ],
-          },
-          {
-            title: '⚡ Outils',
-            items: [
-              {
-                label: '🔍 Scanner de domaine',
-                href: 'https://beta.copernik.io/app/domains/',
-              },
-              {
-                label: '📊 Dashboard',
-                href: 'https://beta.copernik.io/app/app',
-              },
-              {
-                label: '🚨 Alertes',
-                href: 'https://beta.copernik.io/app/alerts',
-              },
-            ],
-          },
-        ],
-        logo: {
-          alt: 'Copernik Logo',
-          src: 'img/logo_mini.png',
-          href: 'https://copernik.io',
-          width: 48,
-          height: 48,
-        },
+        links: [],
         copyright: `
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; padding: 20px 0;">
-            <div style="display: flex; align-items: center; gap: 16px; text-align: center;">
-              <div style="font-size: 16px; color: #1e293b; font-weight: 700; background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                🛡️ La cybersécurité accessible à tous
+          <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--ifm-toc-border-color);">
+            <!-- Logo -->
+            <div style="text-align: center; margin-bottom: 2rem;">
+              <a href="https://copernik.io" style="display: inline-block; margin-bottom: 1rem;">
+                <img src="/img/logo_mini.png" alt="Copernik Logo" style="width: 48px; height: 48px; border-radius: 8px;" />
+              </a>
+            </div>
+
+            <!-- Mission statement -->
+            <div style="text-align: center; margin-bottom: 2rem;">
+              <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--ifm-color-primary-lightest); color: var(--ifm-color-primary-darkest); padding: 0.5rem 1rem; border-radius: 1rem; font-weight: 600; font-size: 0.875rem; margin-bottom: 1rem;">
+                <span>🛡️</span>
+                <span>Notre mission</span>
+              </div>
+              <p style="color: var(--ifm-color-content); font-size: 0.875rem; line-height: 1.6; max-width: 32rem; margin: 0 auto;">
+                Protéger vos systèmes avec des outils de cybersécurité modernes et accessibles pour tous les acteurs du numérique.
+              </p>
+            </div>
+
+            <!-- Company info -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; text-align: center;">
+              <div>
+                <h4 style="font-weight: 600; color: var(--ifm-heading-color); margin-bottom: 0.5rem; font-size: 0.875rem;">Société</h4>
+                <p style="color: var(--ifm-color-content-secondary); font-size: 0.75rem; margin: 0; line-height: 1.4;">
+                  Cyber&Co SAS<br>
+                  RCS : 940310303<br>
+                  SIRET : 94031030300018
+                </p>
+              </div>
+
+              <div>
+                <h4 style="font-weight: 600; color: var(--ifm-heading-color); margin-bottom: 0.5rem; font-size: 0.875rem;">Contact</h4>
+                <p style="color: var(--ifm-color-content-secondary); font-size: 0.75rem; margin: 0; line-height: 1.4;">
+                  France<br>
+                  <a href="mailto:contact@copernik.io" style="color: var(--ifm-link-color); text-decoration: none;">contact@copernik.io</a>
+                </p>
+              </div>
+
+              <div>
+                <h4 style="font-weight: 600; color: var(--ifm-heading-color); margin-bottom: 0.5rem; font-size: 0.875rem;">Hébergement</h4>
+                <p style="color: var(--ifm-color-content-secondary); font-size: 0.75rem; margin: 0; line-height: 1.4;">
+                  Scaleway SAS<br>
+                  Paris, France
+                </p>
+              </div>
+
+              <div>
+                <h4 style="font-weight: 600; color: var(--ifm-heading-color); margin-bottom: 0.5rem; font-size: 0.875rem;">Conformité</h4>
+                <p style="color: var(--ifm-color-content-secondary); font-size: 0.75rem; margin: 0; line-height: 1.4;">
+                  RGPD<br>
+                  Hébergement France
+                </p>
               </div>
             </div>
-            <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap; justify-content: center;">
-              <span style="color: #64748b; font-size: 14px; font-weight: 500;">🔒 Sécurisé</span>
-              <span style="color: #64748b; font-size: 14px; font-weight: 500;">⚡ Rapide</span>
-              <span style="color: #64748b; font-size: 14px; font-weight: 500;">🎯 Précis</span>
-              <span style="color: #64748b; font-size: 14px; font-weight: 500;">📱 Accessible</span>
+
+            <!-- Support partner -->
+            <div style="text-align: center; padding-top: 1.5rem; border-top: 1px solid var(--ifm-toc-border-color);">
+              <div style="display: inline-flex; align-items: center; gap: 0.75rem; padding: 0.75rem;">
+                <span style="font-size: 0.75rem; color: var(--ifm-color-content-secondary); font-weight: 500;">Projet supporté par</span>
+                <img src="/img/scaleway.png" alt="Scaleway" style="height: 1rem; vertical-align: middle; opacity: 0.8;" />
+              </div>
             </div>
-            <div style="color: #94a3b8; font-size: 12px; text-align: center;">
-              © ${new Date().getFullYear()} Copernik - Tous droits réservés
+
+            <!-- Copyright -->
+            <div style="text-align: center; margin-top: 1.5rem; color: var(--ifm-color-content-secondary); font-size: 0.75rem;">
+              © ${new Date().getFullYear()} Copernik - Un produit <strong><a href="https://cyberand.co" style="color: var(--ifm-link-color); text-decoration: none;">Cyber&Co</a></strong>
             </div>
           </div>
         `,
