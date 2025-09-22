@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Scan de sous-domaines 🔍
+# Scan de sous-domaines
 
 Le scan de sous-domaines de Copernik découvre automatiquement tous les sous-domaines associés à votre domaine principal. Cette reconnaissance permet d'identifier des ressources potentiellement oubliées ou non sécurisées qui pourraient représenter des points d'entrée pour des attaquants.
 

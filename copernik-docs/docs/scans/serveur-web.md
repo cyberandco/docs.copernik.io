@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Scan de serveur web 🖥️
+# Scan de serveur web
 
 Le scan de serveur web de Copernik analyse la configuration et la sécurité de vos serveurs web pour identifier les problèmes de configuration, les technologies utilisées et les bonnes pratiques non respectées. Cette analyse permet d'optimiser la sécurité et les performances de vos services web.
 

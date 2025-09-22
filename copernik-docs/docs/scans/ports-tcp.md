@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Scan de ports TCP 🔌
+# Scan de ports TCP
 
 Le scan de ports TCP de Copernik identifie les services actifs sur vos serveurs en analysant les ports ouverts et accessibles depuis Internet. Cette reconnaissance permet de détecter les services exposés involontairement et d'évaluer la surface d'attaque de votre infrastructure.
 

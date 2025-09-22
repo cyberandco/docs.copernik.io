@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Scan SSL/TLS 🔒
+# Scan SSL/TLS
 
 Le scan SSL/TLS de Copernik effectue une analyse complète de vos certificats et de la configuration de sécurité de vos connexions chiffrées. Ce scan est essentiel pour garantir que vos communications sont protégées contre l'interception et la manipulation.
 

@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Scan de vulnérabilités ⚠️
+# Scan de vulnérabilités
 
 Le scan de vulnérabilités de Copernik utilise la technologie Nuclei pour identifier les failles de sécurité connues dans vos applications web et services. Ce scan automatisé détecte un large éventail de vulnérabilités en utilisant une base de données constamment mise à jour.
 

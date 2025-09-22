@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Vue d'ensemble des scans 🛡️
+# Vue d'ensemble des scans
 
 Copernik propose une suite complète de scans de sécurité automatisés pour évaluer et surveiller la posture de sécurité de vos services web. Nos outils d'analyse utilisent des technologies de pointe pour identifier les vulnérabilités et les problèmes de configuration qui pourraient compromettre votre infrastructure.
 

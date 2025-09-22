@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Scan DNS 🌐
+# Scan DNS
 
 Le scan DNS de Copernik analyse la configuration de vos enregistrements DNS pour détecter les erreurs de configuration, les vulnérabilités potentielles et les bonnes pratiques non respectées. Une configuration DNS correcte est cruciale pour la sécurité et la disponibilité de vos services.
 
