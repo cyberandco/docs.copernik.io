@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="fr" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-scans/vulnerabilites" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Scan de vulnérabilités | Copernik Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.copernik.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.copernik.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.copernik.io/docs/scans/vulnerabilites"><meta data-rh="true" property="og:locale" content="fr"><meta data-rh="true" name="docusaurus_locale" content="fr"><meta data-rh="true" name="docsearch:language" content="fr"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Scan de vulnérabilités | Copernik Documentation"><meta data-rh="true" name="description" content="Le scan de vulnérabilités de Copernik utilise la technologie Nuclei pour identifier les failles de sécurité connues dans vos applications web et services. Ce scan automatisé détecte un large éventail de vulnérabilités en utilisant une base de données constamment mise à jour."><meta data-rh="true" property="og:description" content="Le scan de vulnérabilités de Copernik utilise la technologie Nuclei pour identifier les failles de sécurité connues dans vos applications web et services. Ce scan automatisé détecte un large éventail de vulnérabilités en utilisant une base de données constamment mise à jour."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.copernik.io/docs/scans/vulnerabilites"><link data-rh="true" rel="alternate" href="https://docs.copernik.io/docs/scans/vulnerabilites" hreflang="fr"><link data-rh="true" rel="alternate" href="https://docs.copernik.io/docs/scans/vulnerabilites" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Nos Scans","item":"https://docs.copernik.io/docs/category/nos-scans"},{"@type":"ListItem","position":2,"name":"Scan de vulnérabilités","item":"https://docs.copernik.io/docs/scans/vulnerabilites"}]}</script><script src="https://stats.cyberand.co/script.js" defer="defer" data-website-id="6b823f17-908a-49fb-a5cf-3f64d1ebaea0"></script><link rel="stylesheet" href="/assets/css/styles.22d8c92b.css">
+<script src="/assets/js/runtime~main.69cc91e2.js" defer="defer"></script>
+<script src="/assets/js/main.94219366.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo_mini.png"><div role="region" aria-label="Aller au contenu principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Aller au contenu principal</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Ouvrir/fermer la barre de navigation" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo_mini.png" alt="Logo Copernik" class="themedComponent_mlkZ themedComponent--light_NVdE" style="border-radius:8px"><img src="/img/logo_mini.png" alt="Logo Copernik" class="themedComponent_mlkZ themedComponent--dark_xIcU" style="border-radius:8px"></div><b class="navbar__title text--truncate">Copernik</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">📚 Guide utilisateur</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://copernik.io" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">🌐 Copernik<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://github.com/cyberandco/docs.copernik.io" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">⭐ GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Basculer entre le mode sombre et clair (actuellement system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Retour au début de la page" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">Bienvenue dans l&#x27;écosystème Copernik 🚀</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/les-bases">Les bases</a><button aria-label="Développer la catégorie &#x27;Les bases&#x27; de la barre latérale" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/category/nos-scans">Nos Scans</a><button aria-label="Réduire la catégorie &#x27;Nos Scans&#x27; de la barre latérale" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/scans/">Vue d&#x27;ensemble des scans</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/scans/ssl">Scan SSL/TLS</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/scans/dns">Scan DNS</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/scans/vulnerabilites">Scan de vulnérabilités</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/scans/sous-domaines">Scan de sous-domaines</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/scans/serveur-web">Scan de serveur web</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/scans/ports-tcp">Scan de ports TCP</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Fil d&#x27;Ariane"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Page d&#x27;accueil" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/docs/category/nos-scans"><span>Nos Scans</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Scan de vulnérabilités</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">Sur cette page</button></div><div class="theme-doc-markdown markdown"><header><h1>Scan de vulnérabilités</h1></header>
+<p>Le scan de vulnérabilités de Copernik utilise la technologie Nuclei pour identifier les failles de sécurité connues dans vos applications web et services. Ce scan automatisé détecte un large éventail de vulnérabilités en utilisant une base de données constamment mise à jour.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="que-détecte-le-scan-de-vulnérabilités-">Que détecte le scan de vulnérabilités ?<a href="#que-détecte-le-scan-de-vulnérabilités-" class="hash-link" aria-label="Lien direct vers Que détecte le scan de vulnérabilités ?" title="Lien direct vers Que détecte le scan de vulnérabilités ?">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vulnérabilités-web-courantes">Vulnérabilités web courantes<a href="#vulnérabilités-web-courantes" class="hash-link" aria-label="Lien direct vers Vulnérabilités web courantes" title="Lien direct vers Vulnérabilités web courantes">​</a></h3>
+<ul>
+<li><strong>Injection SQL</strong> : Détection des failles permettant l&#x27;injection de code SQL</li>
+<li><strong>Cross-Site Scripting (XSS)</strong> : Identification des vulnérabilités XSS réfléchies et persistantes</li>
+<li><strong>Cross-Site Request Forgery (CSRF)</strong> : Contrôle des protections anti-CSRF</li>
+<li><strong>Inclusion de fichiers</strong> : Détection des vulnérabilités LFI/RFI</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problèmes-de-configuration">Problèmes de configuration<a href="#problèmes-de-configuration" class="hash-link" aria-label="Lien direct vers Problèmes de configuration" title="Lien direct vers Problèmes de configuration">​</a></h3>
+<ul>
+<li><strong>Fichiers sensibles exposés</strong> : Détection de fichiers de configuration accessibles</li>
+<li><strong>Répertoires listables</strong> : Identification de l&#x27;indexation non désirée</li>
+<li><strong>Headers de sécurité</strong> : Vérification des headers HTTP de sécurité</li>
+<li><strong>Erreurs d&#x27;authentification</strong> : Détection des contournements d&#x27;authentification</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vulnérabilités-dapplications">Vulnérabilités d&#x27;applications<a href="#vulnérabilités-dapplications" class="hash-link" aria-label="Lien direct vers Vulnérabilités d&#x27;applications" title="Lien direct vers Vulnérabilités d&#x27;applications">​</a></h3>
+<ul>
+<li><strong>CMS populaires</strong> : WordPress, Drupal, Joomla et leurs plugins</li>
+<li><strong>Frameworks web</strong> : Détection de vulnérabilités dans les frameworks courants</li>
+<li><strong>Panneaux d&#x27;administration</strong> : Identification des interfaces d&#x27;admin non sécurisées</li>
+<li><strong>API exposées</strong> : Détection des endpoints d&#x27;API non protégés</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="technologies-et-méthodes">Technologies et méthodes<a href="#technologies-et-méthodes" class="hash-link" aria-label="Lien direct vers Technologies et méthodes" title="Lien direct vers Technologies et méthodes">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="moteur-nuclei">Moteur Nuclei<a href="#moteur-nuclei" class="hash-link" aria-label="Lien direct vers Moteur Nuclei" title="Lien direct vers Moteur Nuclei">​</a></h3>
+<p>Notre scan utilise <a href="https://nuclei.projectdiscovery.io/" target="_blank" rel="noopener noreferrer">Nuclei</a>, un scanner de vulnérabilités rapide et configurable qui :</p>
+<ul>
+<li>Utilise des templates YAML pour définir les tests</li>
+<li>Maintient une base de données de + 3000 vulnérabilités</li>
+<li>Met à jour automatiquement les signatures de détection</li>
+<li>Minimise les faux positifs grâce à des vérifications précises</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="base-de-données-de-vulnérabilités">Base de données de vulnérabilités<a href="#base-de-données-de-vulnérabilités" class="hash-link" aria-label="Lien direct vers Base de données de vulnérabilités" title="Lien direct vers Base de données de vulnérabilités">​</a></h3>
+<ul>
+<li><strong>CVE</strong> : Common Vulnerabilities and Exposures</li>
+<li><strong>CWE</strong> : Common Weakness Enumeration</li>
+<li><strong>OWASP Top 10</strong> : Principales vulnérabilités web</li>
+<li><strong>Vulnérabilités Zero-Day</strong> : Nouvelles vulnérabilités découvertes</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="niveaux-de-sévérité">Niveaux de sévérité<a href="#niveaux-de-sévérité" class="hash-link" aria-label="Lien direct vers Niveaux de sévérité" title="Lien direct vers Niveaux de sévérité">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-critique">🔴 Critique<a href="#-critique" class="hash-link" aria-label="Lien direct vers 🔴 Critique" title="Lien direct vers 🔴 Critique">​</a></h3>
+<ul>
+<li>Exécution de code à distance (RCE)</li>
+<li>Injection SQL avec accès complet à la base</li>
+<li>Contournement complet d&#x27;authentification</li>
+<li>Exposition de données sensibles</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-élevée">🟠 Élevée<a href="#-élevée" class="hash-link" aria-label="Lien direct vers 🟠 Élevée" title="Lien direct vers 🟠 Élevée">​</a></h3>
+<ul>
+<li>Cross-Site Scripting (XSS) persistant</li>
+<li>Injection de commandes limitée</li>
+<li>Escalade de privilèges</li>
+<li>Bypass d&#x27;autorisation</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-moyenne">🟡 Moyenne<a href="#-moyenne" class="hash-link" aria-label="Lien direct vers 🟡 Moyenne" title="Lien direct vers 🟡 Moyenne">​</a></h3>
+<ul>
+<li>XSS réfléchi</li>
+<li>Information disclosure</li>
+<li>Configuration faible</li>
+<li>Déni de service (DoS)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-faible">🔵 Faible<a href="#-faible" class="hash-link" aria-label="Lien direct vers 🔵 Faible" title="Lien direct vers 🔵 Faible">​</a></h3>
+<ul>
+<li>Headers de sécurité manquants</li>
+<li>Versions obsolètes détectées</li>
+<li>Bonnes pratiques non respectées</li>
+<li>Informations de debug exposées</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="exemples-de-détections">Exemples de détections<a href="#exemples-de-détections" class="hash-link" aria-label="Lien direct vers Exemples de détections" title="Lien direct vers Exemples de détections">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vulnérabilité-critique-détectée">Vulnérabilité critique détectée<a href="#vulnérabilité-critique-détectée" class="hash-link" aria-label="Lien direct vers Vulnérabilité critique détectée" title="Lien direct vers Vulnérabilité critique détectée">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">🔴 CRITIQUE - Injection SQL détectée</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - URL : https://example.com/search.php?q=</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Paramètre vulnérable : q</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Type : Union-based SQL injection</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Impact : Accès complet à la base de données</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - CVE : CVE-2023-1234</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="problème-de-configuration">Problème de configuration<a href="#problème-de-configuration" class="hash-link" aria-label="Lien direct vers Problème de configuration" title="Lien direct vers Problème de configuration">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">🟡 MOYEN - Fichier sensible exposé</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - URL : https://example.com/.env</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Type : Configuration file exposure</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Contenu : Variables d&#x27;environnement et secrets</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Recommandation : Déplacer hors du webroot</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="headers-de-sécurité">Headers de sécurité<a href="#headers-de-sécurité" class="hash-link" aria-label="Lien direct vers Headers de sécurité" title="Lien direct vers Headers de sécurité">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">🔵 FAIBLE - Headers de sécurité manquants</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Content-Security-Policy : Non configuré</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - X-Frame-Options : Absent</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - X-Content-Type-Options : Manquant</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - Recommendation : Implémenter les headers OWASP</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="optimisations-et-limitations">Optimisations et limitations<a href="#optimisations-et-limitations" class="hash-link" aria-label="Lien direct vers Optimisations et limitations" title="Lien direct vers Optimisations et limitations">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="optimisations-performance">Optimisations performance<a href="#optimisations-performance" class="hash-link" aria-label="Lien direct vers Optimisations performance" title="Lien direct vers Optimisations performance">​</a></h3>
+<ul>
+<li><strong>Limitation de débit</strong> : 20 requêtes/seconde pour éviter la surcharge</li>
+<li><strong>Templates filtrés</strong> : Focus sur les vulnérabilités critiques/moyennes</li>
+<li><strong>Timeout intelligent</strong> : 5 minutes maximum par scan</li>
+<li><strong>Exclusions DoS</strong> : Pas de tests de déni de service</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="scope-du-scan">Scope du scan<a href="#scope-du-scan" class="hash-link" aria-label="Lien direct vers Scope du scan" title="Lien direct vers Scope du scan">​</a></h3>
+<ul>
+<li><strong>Ports analysés</strong> : 80, 443, 8080, 8443</li>
+<li><strong>Profondeur</strong> : Pages publiquement accessibles</li>
+<li><strong>Authentification</strong> : Tests sur interfaces publiques uniquement</li>
+<li><strong>Respect robots.txt</strong> : Prise en compte des directives d&#x27;exclusion</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fréquence-et-impact">Fréquence et impact<a href="#fréquence-et-impact" class="hash-link" aria-label="Lien direct vers Fréquence et impact" title="Lien direct vers Fréquence et impact">​</a></h2>
+<ul>
+<li><strong>Fréquence</strong> : Hebdomadaire</li>
+<li><strong>Impact sur les performances</strong> : Faible (requêtes limitées)</li>
+<li><strong>Durée moyenne</strong> : 2-10 minutes selon la taille du site</li>
+<li><strong>Ressources</strong> : Scan non-intrusif, pas de modification de données</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="actions-recommandées">Actions recommandées<a href="#actions-recommandées" class="hash-link" aria-label="Lien direct vers Actions recommandées" title="Lien direct vers Actions recommandées">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="en-cas-de-vulnérabilité-critique">En cas de vulnérabilité critique<a href="#en-cas-de-vulnérabilité-critique" class="hash-link" aria-label="Lien direct vers En cas de vulnérabilité critique" title="Lien direct vers En cas de vulnérabilité critique">​</a></h3>
+<ol>
+<li><strong>Isolation</strong> immédiate si possible</li>
+<li><strong>Patch</strong> ou contournement temporaire</li>
+<li><strong>Vérification</strong> de l&#x27;absence d&#x27;exploitation</li>
+<li><strong>Documentation</strong> de l&#x27;incident</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="maintenance-préventive">Maintenance préventive<a href="#maintenance-préventive" class="hash-link" aria-label="Lien direct vers Maintenance préventive" title="Lien direct vers Maintenance préventive">​</a></h3>
+<ol>
+<li><strong>Mises à jour</strong> régulières des systèmes</li>
+<li><strong>Audit de code</strong> pour les développements custom</li>
+<li><strong>Tests de sécurité</strong> intégrés au CI/CD</li>
+<li><strong>Formation</strong> des équipes de développement</li>
+</ol>
+<hr>
+<div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>Vulnérabilités critiques</div><div class="admonitionContent_BuS1"><p>Les vulnérabilités critiques doivent être traitées immédiatement. Contactez votre équipe sécurité pour des instructions détaillées.</p></div></div></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/cyberandco/docs.copernik.io/tree/main/docs/scans/vulnerabilites.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Éditer cette page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Pages de documentation"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/scans/dns"><div class="pagination-nav__sublabel">Précédent</div><div class="pagination-nav__label">Scan DNS</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/scans/sous-domaines"><div class="pagination-nav__sublabel">Suivant</div><div class="pagination-nav__label">Scan de sous-domaines</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#que-détecte-le-scan-de-vulnérabilités-" class="table-of-contents__link toc-highlight">Que détecte le scan de vulnérabilités ?</a><ul><li><a href="#vulnérabilités-web-courantes" class="table-of-contents__link toc-highlight">Vulnérabilités web courantes</a></li><li><a href="#problèmes-de-configuration" class="table-of-contents__link toc-highlight">Problèmes de configuration</a></li><li><a href="#vulnérabilités-dapplications" class="table-of-contents__link toc-highlight">Vulnérabilités d&#39;applications</a></li></ul></li><li><a href="#technologies-et-méthodes" class="table-of-contents__link toc-highlight">Technologies et méthodes</a><ul><li><a href="#moteur-nuclei" class="table-of-contents__link toc-highlight">Moteur Nuclei</a></li><li><a href="#base-de-données-de-vulnérabilités" class="table-of-contents__link toc-highlight">Base de données de vulnérabilités</a></li></ul></li><li><a href="#niveaux-de-sévérité" class="table-of-contents__link toc-highlight">Niveaux de sévérité</a><ul><li><a href="#-critique" class="table-of-contents__link toc-highlight">🔴 Critique</a></li><li><a href="#-élevée" class="table-of-contents__link toc-highlight">🟠 Élevée</a></li><li><a href="#-moyenne" class="table-of-contents__link toc-highlight">🟡 Moyenne</a></li><li><a href="#-faible" class="table-of-contents__link toc-highlight">🔵 Faible</a></li></ul></li><li><a href="#exemples-de-détections" class="table-of-contents__link toc-highlight">Exemples de détections</a><ul><li><a href="#vulnérabilité-critique-détectée" class="table-of-contents__link toc-highlight">Vulnérabilité critique détectée</a></li><li><a href="#problème-de-configuration" class="table-of-contents__link toc-highlight">Problème de configuration</a></li><li><a href="#headers-de-sécurité" class="table-of-contents__link toc-highlight">Headers de sécurité</a></li></ul></li><li><a href="#optimisations-et-limitations" class="table-of-contents__link toc-highlight">Optimisations et limitations</a><ul><li><a href="#optimisations-performance" class="table-of-contents__link toc-highlight">Optimisations performance</a></li><li><a href="#scope-du-scan" class="table-of-contents__link toc-highlight">Scope du scan</a></li></ul></li><li><a href="#fréquence-et-impact" class="table-of-contents__link toc-highlight">Fréquence et impact</a></li><li><a href="#actions-recommandées" class="table-of-contents__link toc-highlight">Actions recommandées</a><ul><li><a href="#en-cas-de-vulnérabilité-critique" class="table-of-contents__link toc-highlight">En cas de vulnérabilité critique</a></li><li><a href="#maintenance-préventive" class="table-of-contents__link toc-highlight">Maintenance préventive</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">
+          <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--ifm-toc-border-color);">
+            <!-- Logo -->
+            <div style="text-align: center; margin-bottom: 2rem;">
+              <a href="https://copernik.io" style="display: inline-block; margin-bottom: 1rem;">
+                <img src="/img/logo_mini.png" alt="Copernik Logo" style="width: 48px; height: 48px; border-radius: 8px;">
+              </a>
+            </div>
+
+            <!-- Mission statement -->
+            <div style="text-align: center; margin-bottom: 2rem;">
+              <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--ifm-color-primary-lightest); color: var(--ifm-color-primary-darkest); padding: 0.5rem 1rem; border-radius: 1rem; font-weight: 600; font-size: 0.875rem; margin-bottom: 1rem;">
+                <span>🛡️</span>
+                <span>Notre mission</span>
+              </div>
+              <p style="color: var(--ifm-color-content); font-size: 0.875rem; line-height: 1.6; max-width: 32rem; margin: 0 auto;">
+                Protéger vos systèmes avec des outils de cybersécurité modernes et accessibles pour tous les acteurs du numérique.
+              </p>
+            </div>
+
+            <!-- Company info -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; text-align: center;">
+              <div>
+                <h4 style="font-weight: 600; color: var(--ifm-heading-color); margin-bottom: 0.5rem; font-size: 0.875rem;">Société</h4>
+                <p style="color: var(--ifm-color-content-secondary); font-size: 0.75rem; margin: 0; line-height: 1.4;">
+                  Cyber&Co SAS<br>
+                  RCS : 940310303<br>
+                  SIRET : 94031030300018
+                </p>
+              </div>
+
+              <div>
+                <h4 style="font-weight: 600; color: var(--ifm-heading-color); margin-bottom: 0.5rem; font-size: 0.875rem;">Contact</h4>
+                <p style="color: var(--ifm-color-content-secondary); font-size: 0.75rem; margin: 0; line-height: 1.4;">
+                  France<br>
+                  <a href="mailto:contact@copernik.io" style="color: var(--ifm-link-color); text-decoration: none;">contact@copernik.io</a>
+                </p>
+              </div>
+
+              <div>
+                <h4 style="font-weight: 600; color: var(--ifm-heading-color); margin-bottom: 0.5rem; font-size: 0.875rem;">Hébergement</h4>
+                <p style="color: var(--ifm-color-content-secondary); font-size: 0.75rem; margin: 0; line-height: 1.4;">
+                  Scaleway SAS<br>
+                  Paris, France
+                </p>
+              </div>
+
+              <div>
+                <h4 style="font-weight: 600; color: var(--ifm-heading-color); margin-bottom: 0.5rem; font-size: 0.875rem;">Conformité</h4>
+                <p style="color: var(--ifm-color-content-secondary); font-size: 0.75rem; margin: 0; line-height: 1.4;">
+                  RGPD<br>
+                  Hébergement France
+                </p>
+              </div>
+            </div>
+
+            <!-- Support partner -->
+            <div style="text-align: center; padding-top: 1.5rem; border-top: 1px solid var(--ifm-toc-border-color);">
+              <div style="display: inline-flex; align-items: center; gap: 0.75rem; padding: 0.75rem;">
+                <span style="font-size: 0.75rem; color: var(--ifm-color-content-secondary); font-weight: 500;">Projet supporté par</span>
+                <img src="/img/scaleway.png" alt="Scaleway" style="height: 1rem; vertical-align: middle; opacity: 0.8;">
+              </div>
+            </div>
+
+            <!-- Copyright -->
+            <div style="text-align: center; margin-top: 1.5rem; color: var(--ifm-color-content-secondary); font-size: 0.75rem;">
+              © 2025 Copernik - Un produit <strong><a href="https://cyberand.co" style="color: var(--ifm-link-color); text-decoration: none;">Cyber&Co</a></strong>
+            </div>
+          </div>
+        </div></div></div></footer></div>
+</body>
+</html>
