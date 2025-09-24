@@ -61,6 +61,14 @@ const config = {
     ],
   ],
 
+  scripts: [
+    {
+      src: 'https://stats.cyberand.co/script.js',
+      defer: true,
+      'data-website-id': '6b823f17-908a-49fb-a5cf-3f64d1ebaea0',
+    },
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
